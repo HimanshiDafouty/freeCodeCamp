@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">"Participate in our survey and share your valuable insights to help us understand your needs and improve our services</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        
+      <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" placeholder="Enter yor email" required>
+        
+      <label for="number" id="number-label">Number: </label>
+        <input type="number"id="number" min="1" max="10" placeholder="Enter a number" required>
+        <label for="dropdown">Choose an option:</label>
+      
+        <select id="dropdown" required>
+          <option value="">Select an option:</option>
+          <option value="option1">Option1</option>
+          <option value="option2">Option2</option>
+        </select>
+        <fieldset>
+          <legend>Choose an option:</legend>
+           <input type="radio" name="options" value="option1" id="option1" required >
+           <label for="option1">Option1</label>
+            <input type="radio" name="options" value="option2" id="option2">
+            <label for="option2">Option2</option>
+      </fieldset>
+      <fieldset>
+        <legend>Select one or more checkboxes:</legend>
+        <input type="checkbox" value="option1" id="checkbox1" name="checkboxes">
+        <label for="checkbox1">Option1</label>
+        <input type="checkbox" value="option2"
+        id="checkbox2" name="checkboxes">
+        <label for="checkbox2">Option2</label>
+       </fieldset>
+       <label for="comments">Additional comments:</label>
+       <textarea id="comments" placeholder="Enter your comments...."></textarea>
+     <button id="submit" type="submit">Submit</button>
+
+    </form>
+  </body>
+
+</html>
